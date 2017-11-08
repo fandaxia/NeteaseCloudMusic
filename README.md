@@ -9,6 +9,9 @@
 感谢Binaryify的开源网易云音乐api项目，先下载并开启该nodejs服务器才能正常运行我的移动端项目
 地址：https://github.com/Binaryify/NeteaseCloudMusicApi
 
+## 运行截图
+![image](https://github.com/fandaxia/NeteaseCloudMusic/blob/master/screenshot/GIF.gif)
+
 ## Build Setup
 
 ``` bash
