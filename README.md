@@ -11,6 +11,8 @@
 
 ## 运行截图
 ![image](https://github.com/fandaxia/NeteaseCloudMusic/blob/master/screenshot/GIF.gif)
+![image](https://github.com/fandaxia/NeteaseCloudMusic/blob/master/screenshot/GIF1.gif)
+![image](https://github.com/fandaxia/NeteaseCloudMusic/blob/master/screenshot/GIF2.gif)
 
 ## Build Setup
 
