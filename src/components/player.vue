@@ -66,7 +66,7 @@
        </div>
      </mu-list-item>
    </div>
-   <audio ref="audio" @timeupdate="updateTime" @canplay="ready" @error="error" @ended="next">
+   <audio id="music" ref="audio" @timeupdate="updateTime" @canplay="ready" @error="error" @ended="next" preload="auto">
      <source :src="url" type="audio/mpeg">
    </audio>
    <mu-bottom-sheet :open="bottomSheet">
@@ -135,9 +135,10 @@ export default {
     currentId (val) {
       this.$ajax.get(api.urlSingleSong(val)).then((res) => {
         this.url = res.data.data[0].url
-        let audio = this.$refs.audio
+        var audio = this.$refs.audio
         audio.load()
-        audio.play()
+        this.$common.autoPlayMusic()
+        this.$common.audioAutoPlay()
       })
       let index = this.playList.findIndex(function (value) {
         return value.id === val
@@ -305,13 +306,13 @@ export default {
   .player .mu-flexbox-item {
     text-align: center;
   }
-  .button-small {
+  .player-normal .button-small {
     font-size: 22px;
   }
-  .button-middle {
+  .player-normal .button-middle {
     font-size: 26px;
   }
-  .button-big {
+  .player-normal .button-big {
     font-size: 40px;
   }
   .player-normal {

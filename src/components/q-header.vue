@@ -31,7 +31,8 @@ export default {
   methods: {
     changeRouter (val) {
       this.selected = val;
-      this.$router.replace({ path: '/' + val})
+      let arr = this.$route.path.split('/')
+      this.$router.replace({path: arr.slice(0,arr.length-2).join('/') + '/' + val})
     }
   }
 }

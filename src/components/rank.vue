@@ -27,7 +27,7 @@ export default {
   methods: {
     getHotSongs () {
       this.$ajax.get(api.urlHotSong()).then((res) => {
-        this.hotSongs = res.data.result.tracks
+        this.hotSongs = res.data.result.songs
         this.showLists = this.hotSongs.slice(0,20)
       })
     },

@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import axios from 'axios'
 Vue.prototype.$ajax = axios
+import common from './util/common'
+Vue.prototype.$common = common
 import router from './router'
 import store from './store'
 import MuseUI from 'muse-ui'

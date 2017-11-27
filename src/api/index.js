@@ -11,7 +11,7 @@ export default {
     return url + '/personalized/newsong'
   },
   urlHotSong () {
-    return url + '/top/list?idx=1'
+    return url + '/search?type=1&limit=100&keywords=热歌榜'
   },
   urlSongDetail (id) {
     return url + '/song/detail?ids=' + id
